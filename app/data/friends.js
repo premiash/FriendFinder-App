@@ -7,10 +7,9 @@
 
 var friends = [
   {
-    // customerName: "Ahmed",
-    // customerEmail: "ahmed@example.com",
-    // customerID: "afhaque89",
-    // phoneNumber: "000-000-0000"
+	name: "John Smith",
+	photo: "https://www.pexels.com/photo/sunglasses-sunset-summer-sand-46710/",
+	scores: [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]
   }
 ];
 

@@ -18,6 +18,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "/../public/survey.html"));
   });
 
+  // app.get("/api/friends", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "/../data/survey.html"));
+  // });
+
 
   // If no matching route is found default to home
   app.use(function(req, res) {

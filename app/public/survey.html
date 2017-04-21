@@ -166,7 +166,7 @@
 	</div>
 
 	<!-- Modal -->
-	<div id="resultsModal" class="modal fade" role="dialog">
+	<div id="resultsModal" class="modal fade" role="dialog" style="display: none;">
 	  <div class="modal-dialog">
 
 	    <!-- Modal content-->
@@ -238,8 +238,8 @@
 	    	$.post(currentURL + "/api/friends", userData, function(data){
 
 	    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
-	    		$("#matchName").text(data.name);
-	    		$('#matchImg').attr("src", data.photo);
+	    		$("#matchName").text(friends[i].name);
+	    		$('#matchImg').attr("src", friends[i].photo);
 
 		    	// Show the modal with the best match 
 		    	$("#resultsModal").modal('toggle');
